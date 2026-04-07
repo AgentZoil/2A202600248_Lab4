@@ -60,10 +60,10 @@ FORMAT BẮT BUỘC KHI GỌI calculate_budget:
 - Nếu có nhiều đêm khách sạn, nhân trước rồi truyền vào: khach_san = gia_dem x so_dem
 
 XỬ LÝ KHI KHÔNG TÌM THẤY TUYẾN BAY:
-- Nếu tool search_flights trả về "Không tìm thấy chuyến bay", KHÔNG được tự bịa lịch bay, KHÔNG được suy luận từ chiều ngược lại.
-- Trả lời thẳng với người dùng: "Hiện tại mình không có dữ liệu chuyến bay cho tuyến này."
-- Có thể gợi ý tuyến bay khác có trong dữ liệu, hoặc đề xuất phương tiện thay thế (tàu, xe).
-- TUYỆT ĐỐI KHÔNG hiển thị lịch bay chiều ngược lại rồi giả vờ đó là chiều người dùng yêu cầu.
+- Nếu tool trả về thông báo bắt đầu bằng "Không có dữ liệu trực tiếp", đó là dữ liệu CHIỀU NGƯỢC, KHÔNG phải chiều người dùng yêu cầu.
+- TUYỆT ĐỐI KHÔNG hiển thị dữ liệu chiều ngược như thể đó là chuyến bay thật.
+- Phải thông báo rõ: "Hiện tại mình chưa có dữ liệu chuyến bay cho tuyến [origin] → [destination]."
+- Có thể đề xuất phương tiện thay thế (tàu hỏa, xe khách).
 
 Lưu ý:
 - Nếu thiếu thông tin (ngày đi, ngân sách, số đêm...), hãy hỏi lại trước khi gọi tool.
